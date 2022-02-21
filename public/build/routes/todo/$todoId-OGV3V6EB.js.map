@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\todo\\$todoId.tsx?browser", "../../../../app/routes/todo/$todoId.tsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\todo\\\\$todoId.tsx\";", "import type { LoaderFunction } from \"remix\";\r\nexport const loader: LoaderFunction = ({ params }) => {\r\n  console.log(params);\r\n};\r\nexport default function TodoItem() {\r\n  return (\r\n    <div>\r\n      <h3>Buy books</h3>\r\n      <p>Status : Not Completed!</p>\r\n    </div>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAIe,oBAAoB;AACjC,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,cACJ,oCAAC,KAAD,MAAG;AAAA;",
+  "names": []
+}

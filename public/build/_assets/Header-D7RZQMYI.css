@@ -1,0 +1,21 @@
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .brand {
+  color: white;
+}
+.header .actions {
+  display: flex;
+  text-align: center;
+}
+.header .actions a {
+  text-decoration: none;
+  color: inherit;
+  background-color: yellow;
+  display: block;
+  min-width: 2rem;
+  height: 100%;
+}

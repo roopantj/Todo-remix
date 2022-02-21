@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\todo\\index.tsx?browser"],
+  "sourcesContent": ["export * from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\todo\\\\index.tsx\";"],
+  "mappings": ";;;;;AAAA;",
+  "names": []
+}

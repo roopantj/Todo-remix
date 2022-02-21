@@ -1,0 +1,1 @@
+window.__remixManifest={"version":"dfa0a057","entry":{"module":"/build/entry.client-RVSGMCVQ.js","imports":["/build/_shared/chunk-62RFNSDE.js"]},"routes":{"root":{"id":"root","path":"","module":"/build/root-4QJLAODG.js","hasAction":false,"hasLoader":false,"hasCatchBoundary":false,"hasErrorBoundary":false}},"url":"/build/manifest-DFA0A057.js"};

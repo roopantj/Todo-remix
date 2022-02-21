@@ -1,0 +1,33 @@
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+.header .brand {
+  color: white;
+}
+.header .actions {
+  display: flex;
+  text-align: center;
+  visibility: hidden;
+}
+.header .actions a {
+  text-decoration: none;
+  color: inherit;
+  background-color: black;
+  display: block;
+  padding: 0.5rem;
+  min-width: 2rem;
+  border: 1px solid white;
+}
+.header button {
+  height: 100%;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+@media screen and (min-width: 370px) {
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\todo.tsx?browser", "../../../app/routes/todo.tsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\todo.tsx\";", "export default function Todo() {\r\n  return <div>List of Todos</div>;\r\n}\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,gBAAgB;AAC7B,SAAO,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

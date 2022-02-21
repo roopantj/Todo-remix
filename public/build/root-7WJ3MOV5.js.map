@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\root.tsx?browser", "../../app/root.tsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\root.tsx\";", "import { LiveReload, Outlet } from \"remix\";\n\nexport default function App() {\n  return (\n    <html lang=\"en\">\n      <head>\n        <meta charSet=\"utf-8\" />\n        <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n        <title>Remix JS</title>\n      </head>\n      <body>\n        <LiveReload />\n      </body>\n    </html>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAEe,eAAe;AAC5B,SACE,oCAAC,QAAD;AAAA,IAAM,MAAK;AAAA,KACT,oCAAC,QAAD,MACE,oCAAC,QAAD;AAAA,IAAM,SAAQ;AAAA,MACd,oCAAC,QAAD;AAAA,IAAM,MAAK;AAAA,IAAW,SAAQ;AAAA,MAC9B,oCAAC,SAAD,MAAO,cAET,oCAAC,QAAD,MACE,oCAAC,YAAD;AAAA;",
+  "names": []
+}

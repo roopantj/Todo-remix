@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\todo\\index.tsx?browser", "../../../../app/routes/todo/index.tsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\todo\\\\index.tsx\";", "import { LoaderFunction, useLoaderData } from \"remix\";\r\nimport { db } from \"~/utils/db.server\";\r\n\r\ntype LoaderData = {\r\n  todoList: Array<{ id: string; name: string }>;\r\n};\r\n\r\nexport const loader: LoaderFunction = async () => {\r\n  const data: LoaderData = {\r\n    todoList: await db.todo.findMany({\r\n      select: { id: true, name: true },\r\n      orderBy: { createdAt: \"desc\" },\r\n    }),\r\n  };\r\n  return data;\r\n};\r\nexport default function TodoRoute() {\r\n  const data = useLoaderData<LoaderData>();\r\n  return (\r\n    <div>\r\n      <ul>\r\n        {data.todoList.map((todo) => (\r\n          <li key={todo.id}>\r\n            <h3>{todo.name}</h3>\r\n          </li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;;;;AAAA;;;ACAA;AACA,gBAAmB;AAeJ,qBAAqB;AAClC,QAAM,OAAO;AACb,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MACG,KAAK,SAAS,IAAI,CAAC,SAClB,oCAAC,MAAD;AAAA,IAAI,KAAK,KAAK;AAAA,KACZ,oCAAC,MAAD,MAAK,KAAK;AAAA;",
+  "names": []
+}

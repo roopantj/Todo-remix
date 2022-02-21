@@ -1,0 +1,13 @@
+.container {
+  margin: 5rem auto;
+}
+.container ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 5rem;
+}
+.container a {
+  text-decoration: none;
+  color: white;
+}

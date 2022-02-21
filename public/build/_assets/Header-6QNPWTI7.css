@@ -1,0 +1,14 @@
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .brand {
+  color: blue;
+}
+.header .actions a {
+  text-decoration: none;
+  color: inherit;
+  background-color: yellow;
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\index.tsx\";", "export default function HomePage() {\r\n  return <h1>Homepage</h1>;\r\n}\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,oBAAoB;AACjC,SAAO,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

@@ -1,0 +1,29 @@
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.header .brand {
+  color: white;
+}
+.header .actions {
+  display: flex;
+  text-align: center;
+}
+.header .actions a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #a000fdea;
+  display: block;
+  padding: 0.5rem;
+  min-width: 2rem;
+  border: 1px solid white;
+}
+.header button {
+  height: 100%;
+  background-color: #a000fdea;
+  border: 1px solid white;
+  color: white;
+}
