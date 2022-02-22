@@ -1,8 +1,8 @@
-import { Outlet, LoaderFunction, ActionFunction, useLoaderData } from "remix";
+import { Outlet, useLoaderData } from "remix";
 import { requireUserId, logout } from "~/utils/session.server";
 import { db } from "~/utils/db.server";
 import Header from "~/components/Header";
-import type { LinksFunction } from "remix";
+import type { LinksFunction, LoaderFunction, ActionFunction } from "remix";
 import stylesUrl from "~/styles/Header.css";
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];

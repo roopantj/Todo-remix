@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\logout.tsx?browser", "../../../app/routes/logout.tsx"],
-  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\logout.tsx\";", "import { LoaderFunction, ActionFunction, redirect } from \"remix\";\r\nimport { logout } from \"~/utils/session.server\";\r\nexport const action: ActionFunction = ({ request }) => {\r\n  return logout(request);\r\n};\r\nexport const loader: LoaderFunction = ({ request }) => {\r\n  return redirect(\"/todo\");\r\n};\r\nexport default function LogoutRoute() {}\r\n"],
-  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AACA,qBAAuB;AAOR,uBAAuB;AAAA;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:D:\\my-remix-app\\app\\routes\\todo\\new.tsx?browser", "../../../../app/routes/todo/new.tsx"],
-  "sourcesContent": ["export { default } from \"D:\\\\my-remix-app\\\\app\\\\routes\\\\todo\\\\new.tsx\";", "export default function NewTodo() {\r\n  return (\r\n    <form>\r\n      <input type=\"text\" placeholder=\"Enter new todo\" />\r\n      <button type=\"submit\">Add</button>\r\n    </form>\r\n  );\r\n}\r\n"],
-  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,mBAAmB;AAChC,SACE,oCAAC,QAAD,MACE,oCAAC,SAAD;AAAA,IAAO,MAAK;AAAA,IAAO,aAAY;AAAA,MAC/B,oCAAC,UAAD;AAAA,IAAQ,MAAK;AAAA,KAAS;AAAA;",
-  "names": []
-}

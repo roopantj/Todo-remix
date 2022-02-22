@@ -1,7 +1,7 @@
 import { ActionFunction, json, LoaderFunction, useLoaderData } from "remix";
 import { db } from "~/utils/db.server";
 import type { LinksFunction } from "remix";
-import stylesUrl from "~/styles/todoItem.css";
+import stylesUrl from "~/styles/todo/todoItem.css";
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
 };

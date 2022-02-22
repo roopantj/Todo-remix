@@ -1,8 +1,9 @@
 import { LoaderFunction, useLoaderData, Link } from "remix";
 import { db } from "~/utils/db.server";
 import { getUserId } from "~/utils/session.server";
+import stylesUrl from "~/styles/todo/todolist.css";
 import type { LinksFunction } from "remix";
-import stylesUrl from "~/styles/todolist.css";
+
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
 };
@@ -25,12 +26,16 @@ export default function TodoRoute() {
   return (
     <div className="container">
       <ul>
-        {data.todoList.map((todo) => (
-          <li key={todo.id} className={todo.completed ? "completed" : ""}>
-            <h3>{todo.name}</h3>
-            <Link to={todo.id}>Edit</Link>
-          </li>
-        ))}
+        {data.todoList.length > 0 ? (
+          data.todoList.map((todo) => (
+            <li key={todo.id} className={todo.completed ? "completed" : ""}>
+              <h3>{todo.name}</h3>
+              <Link to={todo.id}>Edit</Link>
+            </li>
+          ))
+        ) : (
+          <h3>No todo items</h3>
+        )}
       </ul>
     </div>
   );
