@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:../app/utils/dev.db"
+  url      = "file:.dev.db"
 }
 model User {
   id           String @id @default(uuid())
