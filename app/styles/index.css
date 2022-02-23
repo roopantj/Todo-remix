@@ -11,3 +11,12 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+.homepage a {
+  text-decoration: none;
+  color: inherit;
+  background-color: black;
+  display: block;
+  padding: 0.5rem;
+  min-width: 2rem;
+  border: 1px solid white;
+}

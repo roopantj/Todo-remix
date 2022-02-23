@@ -1,5 +1,5 @@
 // app/styles/index.css
-var styles_default = "/build/_assets/index-AC3DKB53.css";
+var styles_default = "/build/_assets/index-4QJ6FD5B.css";
 
 export {
   styles_default
