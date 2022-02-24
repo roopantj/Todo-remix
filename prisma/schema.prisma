@@ -2,27 +2,25 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
 }
-
 datasource db {
-  provider = "sqlite"
-  url      = "file:.dev.db"
+  provider = "mongodb"
+  url      = "mongodb+srv://Roopan:Roopan@cluster0.x531j.mongodb.net/Todo?retryWrites=true&w=majority&ssl=true&connectTimeoutMS=5000"
 }
-model User {
-  id           String @id @default(uuid())
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  username     String
-  passwordHash String
-  todoList     Todo[]
-}
-model Todo {
-  id         String   @id @default(uuid())
-  userid     String 
-  user       User  @relation(fields: [userid], references: [id],onDelete: Cascade)
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+model todo{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  userid     String
   name       String
   completed  Boolean
+  user  user @relation(fields: [userid],references: [id],onDelete: Cascade)
+  createdAt  DateTime @default(now())
+}
+model user{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt  DateTime @default(now())
+  username String
+  passwordHash String
+  todoList    todo[]
 }
